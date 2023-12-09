@@ -14,7 +14,7 @@ body {
 }
 body{
   display: flex;
-  align-items: center;
+  justify-content: center;
   min-height: 100vh;
   margin-left: 500px;
 }
@@ -23,8 +23,8 @@ body{
   background: #1500ff;
 }
 .wrapper{
-  width: 500px;
-  padding: 30px;
+  width: max-content;
+  padding: 10px;
   border-radius: 7px;
   background: #fff;
   box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
@@ -101,7 +101,7 @@ form .drop-list{
   width: 8px;
 }
 .select-box select::-webkit-scrollbar-track{
-  background: #fff;
+  background: #ffffff;
 }
 .select-box select::-webkit-scrollbar-thumb{
   background: #000;
