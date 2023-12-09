@@ -15,8 +15,7 @@ body {
 body{
   display: flex;
   justify-content: center;
-  min-height: 100vh;
-  margin-left: 500px;
+  min-height: 100%;
 }
 ::selection{
   color: #fff;
