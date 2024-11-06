@@ -1,28 +1,64 @@
-
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Currency Converter App in JavaScript | CodingNepal</title>
-    <link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- FontAweome CDN Link for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <style>
-      #resize-button{
-        width: 172px;
-      }
-      #display{
-        width: 172px;
-        height: 35px;
-      }
-    </style>
-    <title>Simple Calculator</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
+    <title>Currency Converter and Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <div class="wrapper">
-                hai
-  </body>
+        <div class="currency-converter">
+            <form>
+                <div class="from">
+                    <select>
+                        <option value="USD">USD</option>
+                    </select>
+                    <img src="" alt="Flag">
+                </div>
+
+                <div class="to">
+                    <select>
+                        <option value="INR">INR</option>
+                    </select>
+                    <img src="" alt="Flag">
+                </div>
+
+                <input type="number" placeholder="Amount" />
+
+                <button type="button">Convert</button>
+
+                <div class="exchange-rate">Getting exchange rate...</div>
+
+                <div class="icon">↔️</div>
+            </form>
+        </div>
+
+        <div class="calculator">
+            <input type="text" class="display" readonly>
+            <div class="buttons">
+                <button data-value="1">1</button>
+                <button data-value="2">2</button>
+                <button data-value="3">3</button>
+                <button data-value="AC">AC</button>
+                <button data-value="4">4</button>
+                <button data-value="5">5</button>
+                <button data-value="6">6</button>
+                <button data-value="DEL">DEL</button>
+                <button data-value="7">7</button>
+                <button data-value="8">8</button>
+                <button data-value="9">9</button>
+                <button data-value="+">+</button>
+                <button data-value="0">0</button>
+                <button data-value="%">%</button>
+                <button data-value="*">*</button>
+                <button data-value="-">-</button>
+                <button data-value="/">/</button>
+                <button data-value="=">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
